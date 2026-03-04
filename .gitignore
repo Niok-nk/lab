@@ -1,0 +1,17 @@
+# ─── Dependencias ───────────────────────────────────────────────────────────
+node_modules/
+dist/
+
+# ─── Variables de entorno ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── OS / Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+
+# ─── Archivos privados del agente (no subir al repo público) ─────────────────
+agente-shinobi.md
+registro.md
