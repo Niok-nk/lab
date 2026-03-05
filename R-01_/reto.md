@@ -1,6 +1,5 @@
 # R-01: La Escena Fundacional
 
-**Nivel**: Genin  
 **Concepto JS/TS**: Variables, const/let, imports ES Modules, estructura modular  
 **Stack**: Astro + TypeScript + Three.js  
 
@@ -85,15 +84,8 @@ import { createCubeMaterial } from './materials'
 
 | Criterio | ¿Cumplido? |
 |---|---|
-| `geometries.ts` exporta su función correctamente | ⬜ |
-| `materials.ts` recibe el color como parámetro | ⬜ |
-| `scene.ts` importa de los otros módulos | ⬜ |
-| El cubo rota en el loop de animación | ⬜ |
-| No hay lógica de Three.js en el `.astro` | ⬜ |
-
----
-
-## Entrega
-
-Cuando termines un archivo, muéstramelo aquí para revisión antes de pasar al siguiente.  
-Empezamos por el más simple: **¿cuál crees que es?**
+| `geometries.ts` exporta su función correctamente | ✅ |
+| `materials.ts` recibe el color como parámetro | ✅ |
+| `scene.ts` importa de los otros módulos | ✅ |
+| El cubo rota en el loop de animación | ✅ |
+| No hay lógica de Three.js en el `.astro` | ✅ |
