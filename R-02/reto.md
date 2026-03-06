@@ -109,8 +109,8 @@ scene.add(light);
 
 | Criterio | ¿Cumplido? |
 |---|---|
-| `planets.ts` define una interface TypeScript | ⬜ |
-| Los meshes se crean con `.forEach()`, no hardcodeados | ⬜ |
-| Se usa `MeshStandardMaterial` con luz visible | ⬜ |
-| Cada esfera tiene posición X diferente | ⬜ |
-| Los meshes rotan en el loop de animación | ⬜ |
+| `planets.ts` define una interface TypeScript | ✅ |
+| Los meshes se crean con `.forEach()`, no hardcodeados | ✅ |
+| Se usa `MeshStandardMaterial` con luz visible | ✅ |
+| Cada esfera tiene posición diferente | ✅ |
+| Los meshes orbitan con desfase usando `index` | ✅ |
