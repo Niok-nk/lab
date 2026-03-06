@@ -8,11 +8,11 @@ export function initScene(container: HTMLElement) {
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
-    camera.position.z = 50;
+    camera.position.z = 20;
 
 
-    const light = new THREE.PointLight(0xffffff, 100);
-    light.position.set(0, 5, 5);
+    const light = new THREE.PointLight(0xffffff, 200);
+    light.position.set(0, 0, 0);
     scene.add(light);
 
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
@@ -47,9 +47,15 @@ export function initScene(container: HTMLElement) {
             const offset = (index / meshes.length) * Math.PI * 2; // 0°, 120°, 240°
             mesh.position.x = Math.sin(time * 0.001 + offset) * 5;
             mesh.position.y = Math.cos(time * 0.001 + offset) * 5;
+            mesh.position.z = Math.sin(time * 0.001 + offset) * 5;
+            mesh.rotation.x += 0.01;
+            mesh.rotation.y += 0.01;
         });
         renderer.render(scene, camera);
     }
     renderer.setAnimationLoop(animate);
+
+    /*¿Qué es index? El segundo parámetro del forEach — te da el número de vuelta: 0, 1, 2. Con ese número calculas un desfase (offset) para que cada planeta empiece en un punto diferente del círculo.    
+    */
 
 }
